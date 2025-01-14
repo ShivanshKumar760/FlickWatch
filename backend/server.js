@@ -6,7 +6,7 @@ import cors from "cors";
 import movieRoutes from "./routes/movie.route.js";
 import tvRoutes from "./routes/tv.route.js";
 import searchRoutes from "./routes/search.route.js";
-import mongoose from "mongoose";
+// import mongoose from "mongoose";
 
 dotenv.config();
 const app = express();
@@ -27,11 +27,15 @@ app.get("/",(req,res)=>{
 });
 
 
-mongoose.connect(process.env.MONGO_URL_LOCAL)
-.then(()=>{
-	console.log("Connected to the database!");
-}).then(()=>{
-	app.listen(port,()=>{
-		console.log(`The server is running at http:localhost:${port}`);
-	});
-}).catch((err)=>console.log(err));
+// mongoose.connect(process.env.MONGO_URL_LOCAL)
+// .then(()=>{
+// 	console.log("Connected to the database!");
+// }).then(()=>{
+// 	app.listen(port,()=>{
+// 		console.log(`The server is running at http:localhost:${port}`);
+// 	});
+// }).catch((err)=>console.log(err));
+
+app.listen(port,()=>{
+	console.log(`The server is running at http:localhost:${port}`);
+});
