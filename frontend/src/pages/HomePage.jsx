@@ -1,7 +1,10 @@
+import HomeScreen from "./HomeScreen"
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div className="">
+        <HomeScreen/>
+    </div>
   )
 }
 
