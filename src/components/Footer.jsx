@@ -40,7 +40,7 @@ export default function Footer() {
                   key={index}
                   className="text-neutral-400 hover:text-neutral-200"
                 >
-                  <Link key={index} href={item.href}>
+                  <Link key={index} to={item.href}>
                     {item.name}
                   </Link>
                 </li>
