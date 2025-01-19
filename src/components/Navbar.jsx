@@ -23,10 +23,10 @@ const Navbar = () => {
              <div className='hidden lg:flex items-center gap-x-24'>
 					<Link to='/' className='hover:underline cursor-pointer font-semibold text-lg text-neutral-400 hover:text-neutral-200 transition duration-300 ease-in-out' onClick={() =>{
                      return setContentType("movie")}}>
-						Movies
+						Movie
 					</Link>
 					<Link to='/' className='hover:underline cursor-pointer font-semibold text-lg text-neutral-400 hover:text-neutral-200 transition duration-300 ease-in-out' onClick={() => {return setContentType("tv")}}>
-						Tv Shows
+						Tv Show
 					</Link>
 				</div>
        </div>
