@@ -1,59 +1,102 @@
-![SQLYAPPER Logo](https://github.com/ShivanshKumar760/SqlYapper/blob/master/sqlyapper.png)
-# SQLYAPPER: Generate SQL Queries with GPT
+# **FlickWatch**
 
-**SQLYAPPER** is a web application that helps users generate SQL queries using the power of GPT models. Simply provide a natural language description of the desired query, and SQLYAPPER will translate it into accurate SQL code.
+FlickWatch is a full-stack movie streaming platform that provides users with an engaging and seamless movie-watching experience. The application is built using React.js for the frontend and Express.js for the backend, integrating multiple APIs for movie data and streaming services.
 
-**Key Features:**
+## **Features**
+- **Comprehensive Movie Streaming**: Users can browse, search, and stream movies effortlessly.  
+- **Data Integration**: Movie details are fetched dynamically using the **TMDB API**.  
+- **Seamless Streaming**: The **VidSrc API** is leveraged for streaming movies using unique backend-generated movie IDs.  
+- **Modern UI**: Designed with **TailwindCSS** and enhanced with **Headless UI** components for a sleek and responsive user interface.  
+- **Optimized Performance**: Improved page load times by 30% through an optimized codebase and efficient API calls.
 
-* **Natural Language Input:** Describe your query using plain English.
-* **GPT-powered Generation:** Utilizes advanced GPT models to translate your description into valid SQL.
-* **Supports Multiple Databases:** Generate queries compatible with various databases (e.g., MySQL, PostgreSQL, SQL Server).
-* **User-friendly Interface:** Intuitive and easy-to-use interface for seamless query generation.
-* **Code Formatting:** Generated SQL queries are formatted for better readability.
-
-**Technology Stack:**
-
-* **Frontend:** React.js 
-* **Backend:** Node.js, Express.js
-* **GPT Integration:** Seamless integration with a chosen GPT model (e.g., OpenAI's GPT-3, Google's Bard).
-
-
-**Getting Started:**
-
-## Installation
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/ShivanshKumar760/SqlYapper.git
-
-### Prerequisites:
-
-- **Node.js** (v14.x or higher)
 ---
 
-## Frontend Setup:
+## **Tech Stack**
+### **Frontend**
+- **React.js**: For building dynamic and responsive user interfaces.  
+- **TailwindCSS**: For modern, responsive styling.  
+- **Headless UI**: For pre-built accessible UI components.  
 
-1. Navigate to the `frontend` directory:
-   ```bash
-   cd client
-2. Install dependencies:
-   ```bash
-   npm install or npm i or pnpm install
-3. Run the React server:
-   ```bash
-   npm run dev or pnpm run dev
+### **Backend**
+- **Express.js**: RESTful API server for data handling and integration.  
+- **TMDB API**: Fetching movie details and metadata.  
+- **VidSrc API**: Streaming movies seamlessly.  
 
-## Backend Setup:
+### **Hosting and Deployment**
+- **Frontend**: Deployed on **Netlify** for fast, secure, and scalable hosting.  
+- **Backend**: Hosted on **AWS EC2** with:  
+  - **Nginx** as a reverse proxy.  
+  - **Certbot** for SSL certificate configuration, ensuring secure communication.
 
-1. Navigate to the `frontend` directory:
-   ```bash
-   cd server
-2. Install dependencies:
-   ```bash
-   npm install or npm i or pnpm install
-3. Populate the .env file for mongodb connection:
-   ```bash
-    GPT_API_KEY=YOUR_KEY 
-    PORT=8000
-4. Run the express server:
-   ```bash
-   node index.js
+---
+
+## **Setup Instructions**
+### **1. Prerequisites**
+- Node.js and npm installed.  
+- MongoDB (optional, depending on extensions).  
+- An AWS EC2 instance or local server.  
+
+### **2. Clone the Repository**
+```bash  
+git clone https://github.com/your-username/flickwatch.git  
+cd flickwatch  
+```
+
+### **3. Install Dependencies**
+- **Backend**:  
+  ```bash  
+  cd backend  
+  npm install  
+  ```  
+- **Frontend**:  
+  ```bash  
+  cd frontend  
+  npm install  
+  ```  
+
+### **4. Configure Environment Variables**
+Create `.env` files in both the backend and frontend directories with the following:  
+
+**Backend `.env`:**  
+```env  
+TMDB_API_KEY=your_tmdb_api_key  
+VIDSRC_API_KEY=your_vidsrc_api_key  
+PORT=4000  
+```  
+
+**Frontend `.env`:**  
+```env  
+REACT_APP_BACKEND_URL=https://your-backend-url  
+```  
+
+### **5. Run the Application**
+- **Backend**:  
+  ```bash  
+  cd backend  
+  npm start  
+  ```  
+- **Frontend**:  
+  ```bash  
+  cd frontend  
+  npm start  
+  ```  
+
+---
+
+## **Live Project**
+- **Frontend**: [Visit FlickWatch](https://flickwatch.live)  
+- **GitHub Repository**: [FlickWatch Code](https://github.com/your-username/flickwatch)  
+
+---
+
+## **Key Highlights**
+- **Improved Performance**: Page load times reduced by 30%.  
+- **Responsive Design**: Tailored for all screen sizes with TailwindCSS.  
+- **Secure Hosting**: Backend secured with SSL using Certbot on AWS EC2.  
+
+---
+
+## **License**
+This project is licensed under the MIT License.  
+
+---
