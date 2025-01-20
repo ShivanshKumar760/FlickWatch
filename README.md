@@ -58,23 +58,22 @@ cd FlickWatch
 Create `.env` files in both the backend and frontend directories with the following:  
 
 **Backend `.env`:**  
-```env  
+```env
+MONGO_URL_LOCAL=your_mongodb_connectionString
 TMDB_API_KEY=your_tmdb_api_key  
-VIDSRC_API_KEY=your_vidsrc_api_key  
 PORT=4000  
 ```  
 
 **Frontend `.env`:**  
 ```env  
 ViTE_BACKEND_API=https://your-backend-url
-ViTE_SOCKET_API=https://your-socket-url   
 ```  
 
 ### **5. Run the Application**
 - **Backend**:  
   ```bash  
   cd backend  
-  node  
+  node  server.js
   ```  
 - **Frontend**:  
   ```bash  
@@ -85,8 +84,8 @@ ViTE_SOCKET_API=https://your-socket-url
 ---
 
 ## **Live Project**
-- **Frontend**: [Visit FlickWatch](https://flickwatch.live)  
-- **GitHub Repository**: [FlickWatch Code](https://github.com/your-username/flickwatch)  
+- **Frontend**: [Visit FlickWatch](https://flickwatchio.netlify.app)  
+- **GitHub Repository**: [FlickWatch Code](https://github.com/ShivanshKumar760/FlickWatch.git)  
 
 ---
 
