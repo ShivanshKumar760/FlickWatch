@@ -38,8 +38,8 @@ FlickWatch is a full-stack movie streaming platform that provides users with an 
 
 ### **2. Clone the Repository**
 ```bash  
-git clone https://github.com/your-username/flickwatch.git  
-cd flickwatch  
+git clone https://github.com/ShivanshKumar760/FlickWatch.git 
+cd FlickWatch  
 ```
 
 ### **3. Install Dependencies**
@@ -66,14 +66,15 @@ PORT=4000
 
 **Frontend `.env`:**  
 ```env  
-REACT_APP_BACKEND_URL=https://your-backend-url  
+ViTE_BACKEND_API=https://your-backend-url
+ViTE_SOCKET_API=https://your-socket-url   
 ```  
 
 ### **5. Run the Application**
 - **Backend**:  
   ```bash  
   cd backend  
-  npm start  
+  node  
   ```  
 - **Frontend**:  
   ```bash  
