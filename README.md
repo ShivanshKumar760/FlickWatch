@@ -1,4 +1,4 @@
-# **FlickWatch**
+![FlickWatch Logo](https://github.com/ShivanshKumar760/FlickWatch/blob/master/frontend/src/images/logo.png)
 
 FlickWatch is a full-stack movie streaming platform that provides users with an engaging and seamless movie-watching experience. The application is built using React.js for the frontend and Express.js for the backend, integrating multiple APIs for movie data and streaming services.
 
