@@ -2,6 +2,7 @@ import { PlayIcon } from "@heroicons/react/24/solid";
 import { Fragment, useRef, useState, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 /*eslint-disable*/
 export default function Seasons({id,season_number}) {
@@ -45,6 +46,7 @@ export default function Seasons({id,season_number}) {
         <div className="flex flex-row items-start gap-4 overflow-x-auto scrollable-content snap-x pb-3">
           {season &&
             season.episodes.map((item, index) => (
+              <>
               <button
                 key={index}
                 onClick={() => {
@@ -121,6 +123,7 @@ export default function Seasons({id,season_number}) {
 
                             <iframe
                               className="w-full h-full"
+                              // src={`https://multiembed.mov/?video_id=${id}&tmdb=1&s=${item.season_number}&e=${item.episode_number}`}
                               src={`https://vidsrc.cc/v2/embed/tv/${id}/${item.season_number}/${item.episode_number}?autoPlay=false`}
                               allowFullScreen
                             ></iframe>
@@ -130,9 +133,22 @@ export default function Seasons({id,season_number}) {
                     </div>
                   </Dialog>
                 </Transition.Root>
+                <Link to={`https://vidsrc.cc/v2/embed/tv/${id}/${item.season_number}/${item.episode_number}/`}>
+                <div className="button-56">    
+                   <span className="text-black">Go add free:</span>VidSrc Tab
+                  </div>
+                </Link>
+           
               </button>
+
+
+              </>
             ))}
+
+
+
         </div>
+
       </div>
     </>
   );

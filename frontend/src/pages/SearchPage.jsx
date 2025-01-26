@@ -276,6 +276,7 @@ const SearchPage = () => {
 	const handleTabClick = (tab) => {
 		setActiveTab(tab);
 		tab === "movie" ? setContentType("movie") : setContentType("tv");
+		tab==="movie"?localStorage.setItem("contentType", "movie"): localStorage.setItem("contentType", "tv");;
 		setResults([]);
 	};
 
@@ -296,7 +297,7 @@ const SearchPage = () => {
 
 	return (
 		<div className="bg-black min-h-screen text-white">
-			<Navbar />
+			<Navbar setActiveTab={setActiveTab}/>
 			<div className="container mx-auto px-4 py-8">
 				<div className="flex justify-center gap-3 py-14">
 					<button

@@ -95,12 +95,15 @@
 
 import { useRef, useState, useEffect } from "react";
 import Seasons from "../components/Seasons";
+// import { useContentStore } from "../store/content";
 
 /*eslint-disable*/
-export default function TvPage({ id }) {
+export default function TvPage({id}) {
   const [data, setData] = useState(null);
   const cancelButtonRef = useRef(null);
-
+  // const {contentType,setContentType}=useContentStore();
+  // console.log(contentType);
+  // setContentType(contentTypeNow);
   useEffect(() => {
     async function fetchData() {
       try {
