@@ -70,3 +70,9 @@
   .headingScrollMovieTv{
 	font-family: "Playwrite USA Modern" !important;
 }
+
+
+.no-scrollbar {
+	overflow: hidden; /* Prevent scrollbars from appearing */
+  }
+  
