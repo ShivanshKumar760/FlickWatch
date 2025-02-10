@@ -93,7 +93,8 @@ export default function MoviePage({id,contentType}) {
                         <Dialog.Panel className="relative transform overflow-hidden lg:rounded-2xl rounded-lg bg-white/20 shadow-xl transition-all my-8 w-full max-w-6xl lg:h-[40em] h-64">
                           <iframe
                             className="w-full h-full"
-                            src={`https://vidsrc.cc/v2/embed/movie/${id}?autoPlay=false`}
+                            // src={`https://vidsrc.cc/v2/embed/movie/${id}?autoPlay=false`}
+                            src={`https://vidsrc.xyz/embed/movie/${id}`}
                             allowFullScreen
                             sandbox="allow-scripts allow-same-origin allow-popups"
                           ></iframe>
