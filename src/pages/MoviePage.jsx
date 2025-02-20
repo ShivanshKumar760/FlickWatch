@@ -96,7 +96,6 @@ export default function MoviePage({id,contentType}) {
                             // src={`https://vidsrc.cc/v2/embed/movie/${id}?autoPlay=false`}
                             src={`https://vidsrc.xyz/embed/movie/${id}`}
                             allowFullScreen
-                            sandbox="allow-scripts allow-same-origin allow-popups"
                           ></iframe>
                         </Dialog.Panel>
                       </Transition.Child>
